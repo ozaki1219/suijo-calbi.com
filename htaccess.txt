@@ -1,0 +1,27 @@
+# “Á’è‚Ìƒtƒ@ƒCƒ‹‚âŠg’£q‚Ö‚ÌƒAƒNƒZƒX‚ğ§ŒÀ‚·‚é
+<FilesMatch "^(€.htaccess|€.txt|€.xml)$">
+  deny from all
+</FilesMatch>
+# ƒfƒBƒŒƒNƒgƒŠ‚âƒtƒ@ƒCƒ‹‚Ìˆê——‚ğ”ñ•\¦‚É‚·‚é
+Options All -Indexes
+# ƒfƒBƒŒƒNƒgƒŠ‚ÉƒAƒNƒZƒX‚µ‚½ê‡ index.html ‚ğƒfƒtƒHƒ‹ƒg‚Å•\¦‚·‚é
+DirectoryIndex index.html
+# www‚È‚µURL‚É301ƒŠƒ_ƒCƒŒƒNƒg
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www€.suijo-calbi€.com)(:80)? [NC]
+RewriteRule ^(.*) http://suijo-calbi.com/$1 [R=301,L]
+# indexƒtƒ@ƒCƒ‹‚Ìê‡/‚ÉƒŠƒ‰ƒCƒg
+RewriteCond %{THE_REQUEST} ^.*/index
+RewriteRule ^(.*)index.html$ http://suijo-calbi.com/$1 [R=301,L]
+# htmlŠg’£q‚È‚µ‚Å‚àƒAƒNƒZƒX
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}€.html -f 
+RewriteRule ^(.*)$ $1.html
+# phpŠg’£q‚È‚µ‚Å‚àƒAƒNƒZƒX
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}€.php -f 
+RewriteRule ^(.*)$ $1.php
+# 404ƒtƒ@ƒCƒ‹
+ErrorDocument 404 http://suijo-calbi.com/404.html
