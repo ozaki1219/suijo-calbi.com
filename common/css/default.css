@@ -1,0 +1,558 @@
+@charset "UTF-8";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,dl, dt, dd,ul,li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+	/*-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;*/
+}
+*{
+	 -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      box-sizing: border-box;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+body {
+	background-color:#fff;
+	text-align: left;
+	cursor:default;
+}
+html,body{
+height: 100%;
+}
+
+img	{
+	border: 0;
+	vertical-align: bottom;
+}
+
+table{
+	border-collapse:collapse;
+    border-spacing:0;
+}
+table tr th{
+	text-align:left;
+	font-weight:normal;
+	vertical-align:top;
+}
+
+table tr td{ vertical-align:top;}
+
+ul li,ol li{ list-style-type: none;}
+
+a {
+	margin:0;
+    padding:0;
+    font-size:100%;
+	color:#000;
+	text-decoration:none;
+}
+
+a:hover {
+	color: #4E4E4E;
+	text-decoration:underline;
+}
+
+
+/*--------------------------
+//// RESET
+--------------------------*/
+
+
+/*--------------------------
+//// GENERAL
+--------------------------*/
+
+/* ------------------------------------------------------------
+hover 
+------------------------------------------------------------ */
+
+.alfa:hover{
+	filter: alpha(opacity=60);
+ 	-moz-opacity:0.60;
+ 	opacity:0.60;
+	opacity: .60; /* Standard: FF gt 1.5, Opera, Safari */
+	filter: alpha(opacity=60); /* IE lt 8 */
+	-ms-filter: "alpha(opacity=60)"; /* IE 8 */
+	-khtml-opacity: .60; /* Safari 1.x */
+	-moz-opacity: .60; /* FF lt 1.5, Netscape */
+}
+
+/* ------------------------------------------------------------
+float 回り込み
+------------------------------------------------------------ */
+.flR{float:right !important;}
+.flL{float:left !important;}
+
+/* ------------------------------------------------------------
+margin 
+------------------------------------------------------------ */
+.mg0{margin:0 !important;}
+.mg5{margin:5px !important;}
+.mg10{margin:10px !important;}
+.mg15{margin:15px !important;}
+.mg20{margin:20px !important;}
+
+.mt0{margin-top:0px !important;}
+.mt5{margin-top:5px !important;}
+.mt10{margin-top:10px !important;}
+.mt15{margin-top:15px !important;}
+.mt20{margin-top:20px !important;}
+.mt25{margin-top:25px !important;}
+.mt30{margin-top:30px !important;}
+.mt35{margin-top:35px !important;}
+.mt40{margin-top:40px !important;}
+.mt45{margin-top:45px !important;}
+.mt50{margin-top:50px !important;}
+
+.mb0{margin-bottom:0px !important;}
+.mb5{margin-bottom:5px !important;}
+.mb10{margin-bottom:10px !important;}
+.mb15{margin-bottom:15px !important;}
+.mb20{margin-bottom:20px !important;}
+.mb25{margin-bottom:25px !important;}
+.mb30{margin-bottom:30px !important;}
+.mb35{margin-bottom:35px !important;}
+.mb40{margin-bottom:40px !important;}
+.mb45{margin-bottom:45px !important;}
+.mb50{margin-bottom:50px !important;}
+
+.mr0{margin-right:0px !important;}
+.mr5{margin-right:5px !important;}
+.mr10{margin-right:10px !important;}
+.mr15{margin-right:15px !important;}
+.mr20{margin-right:20px !important;}
+.mr25{margin-right:25px !important;}
+.mr30{margin-right:30px !important;}
+.mr35{margin-right:35px !important;}
+.mr40{margin-right:40px !important;}
+.mr45{margin-right:45px !important;}
+.mr50{margin-right:50px !important;}
+
+.ml0{margin-left:0px !important;}
+.ml5{margin-left:5px !important;}
+.ml10{margin-left:10px !important;}
+.ml15{margin-left:15px !important;}
+.ml20{margin-left:20px !important;}
+.ml25{margin-left:25px !important;}
+.ml30{margin-left:30px !important;}
+.ml35{margin-left:35px !important;}
+.ml40{margin-left:40px !important;}
+.ml45{margin-left:45px !important;}
+.ml50{margin-left:50px !important;}
+
+.mgAT{margin:0 auto !important;}
+
+/* ------------------------------------------------------------
+ padding 
+------------------------------------------------------------ */
+
+.pd0{padding:0 !important;}
+.pd5{padding:5px !important;}
+.pd10{padding:10px !important;}
+.pd15{padding:15px !important;}
+.pd20{padding:20px !important;}
+.pd1020{padding:10px 20px !important;}
+
+.pt0{padding-top:0px !important;}
+.pt5{padding-top:5px !important;}
+.pt10{padding-top:10px !important;}
+.pt15{padding-top:15px !important;}
+.pt20{padding-top:20px !important;}
+.pt25{padding-top:25px !important;}
+.pt30{padding-top:30px !important;}
+.pt35{padding-top:35px !important;}
+.pt40{padding-top:40px !important;}
+.pt45{padding-top:45px !important;}
+.pt50{padding-top:50px !important;}
+
+.pb0{padding-bottom:0px !important;}
+.pb5{padding-bottom:5px !important;}
+.pb10{padding-bottom:10px !important;}
+.pb15{padding-bottom:15px !important;}
+.pb20{padding-bottom:20px !important;}
+.pb25{padding-bottom:25px !important;}
+.pb30{padding-bottom:30px !important;}
+.pb35{padding-bottom:35px !important;}
+.pb40{padding-bottom:40px !important;}
+.pb45{padding-bottom:45px !important;}
+.pb50{padding-bottom:50px !important;}
+
+.pr0{padding-right:0px !important;}
+.pr5{padding-right:5px !important;}
+.pr10{padding-right:10px !important;}
+.pr15{padding-right:15px !important;}
+.pr20{padding-right:20px !important;}
+.pr25{padding-right:25px !important;}
+.pr30{padding-right:30px !important;}
+.pr35{padding-right:35px !important;}
+.pr40{padding-right:40px !important;}
+.pr45{padding-right:45px !important;}
+.pr50{padding-right:50px !important;}
+
+.pl0{padding-left:0px !important;}
+.pl5{padding-left:5px !important;}
+.pl10{padding-left:10px !important;}
+.pl15{padding-left:15px !important;}
+.pl20{padding-left:20px !important;}
+.pl25{padding-left:25px !important;}
+.pl30{padding-left:30px !important;}
+.pl35{padding-left:35px !important;}
+.pl40{padding-left:40px !important;}
+.pl45{padding-left:45px !important;}
+.pl50{padding-left:50px !important;}
+
+
+/* ------------------------------------------------------------
+ text-align 
+ ------------------------------------------------------------ */
+
+.taC{text-align:center !Important;}
+.taR{text-align:right !Important;}
+.taL{text-align:left !Important;}
+
+
+/* ------------------------------------------------------------
+ font  
+ ------------------------------------------------------------ */
+
+.fz10{font-size:10px !Important;}
+.fz12{font-size:12px !Important;}
+.fz14{font-size:14px !Important;}
+.fz15{font-size:15px !important;}
+.fz16{font-size:16px !Important;}
+.fz18{font-size:18px !Important;}
+.fz24{font-size:24px !Important;}
+
+.cR{color:#ff0000 !important;}
+.cG{color:#00ff00 !important;}
+.cB{color:#0000ff !important;}
+.cY{color:#ffff00 !important;}
+.cK{color:#333333 !important;}
+.cW{color:#ffffff !important;}
+
+.ft_times{font-family:"Times New Roman", Times, serif !important;}
+.ft_min{font-family:"ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif !important;}
+
+.fwB{font-weight: bold !Important;}
+.fwN{font-weight: normal !Important;}
+
+/* ------------------------------------------------------------
+ lastList 
+ ------------------------------------------------------------ */
+
+.lastList{
+	margin: 0 !Important;
+}
+
+
+/* ------------------------------------------------------------
+ clearfix
+------------------------------------------------------------ */
+
+
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+/* ------------------------------------------------------------
+左右中央寄せ
+------------------------------------------------------------ */
+.mgAT{margin:0 auto !important;}
+
+/* ------------------------------------------------------------
+width
+------------------------------------------------------------ */
+.w100{width:100% !important;}
+.wAT{width:auto !important;}
+.m_w100{max-width:100% !important;}
+
+
+/* ------------------------------------------------------------
+vertical-align確実バージョン
+------------------------------------------------------------ */
+
+.veM{
+	vertical-align:middle !important;
+}
+
+.vaM2{
+	display:table-cell !important;
+	vertical-align:middle;
+}
+
+/* ------------------------------------------------------------
+指定ピクセル以上以下で非表示
+------------------------------------------------------------ */
+
+@media only screen and (max-width: 420px){.hu420{display:none !important;}}
+@media only screen and (max-width: 640px){.hu640{display:none !important;}}
+@media only screen and (max-width: 768px){.hu768{display:none !important;}}
+@media only screen and (max-width: 970px){.hu970{display:none !important;}}
+@media only screen and (min-width: 421px){.ho421{display:none !important;}}
+@media only screen and (min-width: 641px){.ho641{display:none !important;}}
+@media only screen and (min-width: 769px){.ho769{display:none !important;}}
+@media only screen and (min-width: 971px){.ho971{display:none !important;}}
+
+
+
+/* ------------------------------------------------------------
+画像左、テキスト右配置。
+------------------------------------------------------------ */
+
+.figureLeft,
+.alignleft {
+	float: left;
+	padding: 0 20px 10px 0;
+	width:35%;
+	text-align:center;
+}
+.figureLeft img,
+.alignleft img {
+		margin-right: auto;
+		margin-left: auto;
+		height: auto;
+		width: 100%;
+	}
+	
+img.alignleft {
+		display: block;
+	}
+
+
+@media only screen and (max-width: 640px) {
+.figureLeft,
+.alignleft {
+		float: none;
+		padding:0 0 10px 0;
+		width:100%;
+		text-align:center;
+	}
+}
+
+/* ------------------------------------------------------------
+画像右、テキスト左配置。
+------------------------------------------------------------ */
+
+.figureRight,
+.alignright {
+	float: right;
+	padding: 0 0 10px 20px;
+	width:35%;
+	text-align:center;
+}
+
+.figureRight img,
+.alignright img {
+		margin-right: auto;
+		margin-left: auto;
+		height: auto;
+		width: 100%;
+	}
+img.alignright {
+		display: block;
+	}
+
+
+@media only screen and (max-width: 640px) {
+.figureRight,
+.alignright {
+		float: none;
+		padding:0 0 10px 0;
+		width:100%;
+		text-align:center;
+	}
+	
+}
+
+/* ------------------------------------------------------------
+画像が均等に並ぶ。pic01 pic02 pic03　は携帯自画像が縦一列に並ぶが、 末尾にnをつけると、携帯時も横並びになる。（clearfix不要） 
+------------------------------------------------------------ */
+
+/*画像2つ並び*/
+
+.pic01,
+.pic01n{
+	width:100%;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	clear:both;
+	zoom: 1;
+}
+
+.pic01 li,
+.pic01n li{
+	width:50%;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	list-style:none;
+	text-align:center;
+	float:left;
+}
+
+.pic01 li:first-child, .pic01n li:first-child{padding-right:10px;}
+.pic01 li:last-child, .pic01n li:last-child{padding-left:10px;}
+.pic01 li img, .pic01n li img{max-width:100%; width:100%;}
+
+
+/*画像3つ並び*/
+
+.pic02,
+.pic02n{
+	width:100%;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	clear:both;
+	zoom: 1;
+}
+
+.pic02 li,
+.pic02n li{
+	width:33.333333%;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	list-style:none;
+	text-align:center;
+	float:left;
+}
+
+.pic02 li:first-child, .pic02n li:first-child{padding-right:10px;}
+.pic02 li:nth-child(2), .pic02n li:nth-child(2){padding:0 5px;}
+.pic02 li:last-child, .pic02n li:last-child{padding-left:10px;}
+.pic02 li img, .pic02 li img{max-width:100%; width:100%;}
+
+
+/*画像4つ並び*/
+
+.pic03,
+.pic03n{
+	width:100%;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	clear:both;
+	zoom: 1;
+}
+
+.pic03 li,
+.pic03n li{
+	width:25%;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	list-style:none;
+	text-align:center;
+	float:left;
+}
+
+.pic03 li:first-child, .pic03n li:first-child{padding-right:10px;}
+.pic03 li:nth-child(2), .pic03n li:nth-child(2){padding:0 7px 0 3px;}
+.pic03 li:nth-child(3), .pic03n li:nth-child(3){padding:0 3px 0 7px;}
+.pic03 li:last-child, .pic03n li:last-child{padding-left:10px;}
+.pic03 li img, .pic03n li img{max-width:100%; width:100%;}
+
+@media only screen and (max-width: 768px) {
+
+.pic03 li{width:50%;}
+.pic03 li:first-child{margin-bottom:20px; padding:0 10px 0 0;}
+.pic03 li:nth-child(2){margin-bottom:20px; padding:0 0 0 10px;}
+.pic03 li:nth-child(3){padding:0 10px 0 0;}
+.pic03 li:last-child{padding:0 0 0 10px;}
+
+}
+
+.pic01:after,
+.pic01n:after,
+.pic02:after,
+.pic02n:after,
+.pic03:after,
+.pic03n:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+
+.pic01{
+	margin:0px;
+}
+
+.pic01 li{
+	width:100%;
+	margin-bottom:20px;
+	padding:0 !important;
+}
+
+.pic02{
+	margin:0px;	
+}
+
+.pic02 li{
+	width:100%;
+	margin-bottom:20px;
+	padding:0 !important;
+}
+
+.pic03{
+	margin:0px;
+}
+
+.pic03 li{
+	width:100%;
+	margin-bottom:20px;
+	padding:0 !important;
+}
+
+}
+
+/* ------------------------------------------------------------
+ボーダー 
+------------------------------------------------------------ */
+.bd1SG {
+	border:1px solid #ccc;
+}
+
+.bdB1SG {
+	border-bottom:1px solid #ccc;
+}
